@@ -7,7 +7,6 @@ footer {
   z-index: 2;
   position: fixed;
   bottom: 0;
-  text-align: center;
 }
 
 header {
@@ -78,13 +77,6 @@ ul li:nth-child(3) {
   animation-delay: 2s;
 }
 
-.titulo {
-  margin-top: 2%;
-  color: #153B50;
-  text-align: right;
-  font-size: 5rem;
-}
-
 main {
   color: #153B50;
   height: 100vh;
@@ -103,44 +95,6 @@ main {
   padding: 10px;
 }
 
-span {
-  font-size: 2rem;
-  color: #153B50;
-  text-align: right;
-  font-style: oblique;
-  font-family: "Playfair Display", serif;
-}
-
-.center-wrapper {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  height: 100h;
-}
-
-.typing-container {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: black;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -150,4 +104,4 @@ body {
   background: linear-gradient(to right, #153B50, #153B50, #904e95, #E4D1EF);
 }
 
-/*# sourceMappingURL=estilo.css.map */
+/*# sourceMappingURL=estilo.scc.map */

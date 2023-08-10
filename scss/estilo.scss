@@ -1,4 +1,10 @@
+@import "footer", "header", "animaciones", "main";
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #153B50, #153B50, #904e95, #E4D1EF);
 }
