@@ -1,11 +1,13 @@
 footer {
-    color: #153B50;
-    background-color: #E4D1EF;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    font-size: 1rem;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
+	margin: 0.1rem 0.1rem;
+	padding: 0;
+	border-top: solid 1px $violeta;
+	height: auto;
+
+	.pie {
+		font-size: 1.1rem;
+		color: $violeta;
+		text-align: center;
+		margin: 0.1rem 0.1rem;
+	}
 }
