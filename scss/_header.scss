@@ -1,14 +1,16 @@
-.head {
-    margin: 0.1rem;
-    background-color: $turquesa;
-    font-size: 1.5rem;
+.navbar {
+    justify-content: center;
+    font-size: 1.2rem;
     border-bottom: solid 2px $violeta;
     border-left: solid 2px $violeta;
     border-right: solid 2px $violeta;
+    background-color: $azul;
+    
 
-    .navbar-nav {
+    .derecha {
         list-style: none;
         text-align: end;
+        margin-left: 0;
 
         .nav-item {
             display: inline-block;
@@ -24,7 +26,7 @@
 
                 &:hover {
                     color: white;
-                    background-color: $azul;
+                    background-color: $violeta;
                     transition: 1s;
                 }
             }

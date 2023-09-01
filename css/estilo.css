@@ -1,14 +1,194 @@
+@charset "UTF-8";
 footer {
   margin: 0.1rem 0.1rem;
   padding: 0;
-  border-top: solid 1px #824670;
+  border-top: solid 1px #153B50;
   height: auto;
 }
 footer .pie {
   font-size: 1.1rem;
-  color: #824670;
+  color: #153B50;
   text-align: center;
   margin: 0.1rem 0.1rem;
+}
+footer .iconosPie {
+  text-align: center;
+}
+footer .iconosPie .bi {
+  height: 3rem;
+}
+
+.navbar {
+  justify-content: center;
+  font-size: 1.2rem;
+  border-bottom: solid 2px #824670;
+  border-left: solid 2px #824670;
+  border-right: solid 2px #824670;
+  background-color: #153B50;
+}
+.navbar .derecha {
+  list-style: none;
+  text-align: end;
+  margin-left: 0;
+}
+.navbar .derecha .nav-item {
+  display: inline-block;
+  margin: 0.2rem 0.2rem;
+  padding: 0.2rem;
+}
+.navbar .derecha .nav-item .nav-link {
+  color: #824670;
+  text-decoration: none;
+  border: #824670 solid 0.1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar .derecha .nav-item .nav-link:hover {
+  color: white;
+  background-color: #824670;
+  transition: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E4D1EF;
+}
+
+main {
+  align-items: center;
+}
+main h1 {
+  color: #824670;
+  text-align: center;
+  font-size: 3rem;
+  margin: 2%;
+}
+main .info {
+  color: #153B50;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  width: 40%;
+  margin: 10% 30%;
+  text-align: center;
+}
+
+.contacto {
+  /*Versión tablet*/
+  /*Versión celu*/
+}
+.contacto h2 {
+  text-align: center;
+  margin: 1%;
+  color: #824670;
+}
+.contacto form {
+  border: 3px solid #153B50;
+  border-radius: 5%;
+  background-color: #d8b3ee;
+  color: #153B50;
+  height: 70%;
+  width: 35%;
+  margin: 3% 30%;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1%;
+}
+.contacto form label,
+.contacto form input,
+.contacto form textarea {
+  margin: 1%;
+  overflow: hidden;
+}
+.contacto form button {
+  font-size: 1.3rem;
+  height: 2.1rem;
+  width: 5.7rem;
+  border: #153B50 1px solid;
+  border-radius: 50%;
+  background-color: #E4D1EF;
+  margin-bottom: 1%;
+}
+.contacto form button:hover {
+  background-color: #153B50;
+  color: white;
+  transition: 1s;
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .contacto .caja {
+    width: 60%;
+    height: 50%;
+    margin: 1% 20%;
+    overflow: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .contacto .caja {
+    width: 80%;
+    height: 60%;
+    margin: 1% 10%;
+    overflow: scroll;
+  }
+}
+
+.proyectos {
+  width: 95%;
+  text-align: center;
+  margin: 1% 2.5%;
+}
+.proyectos h2 {
+  text-align: center;
+  margin: 1%;
+  color: #824670;
+}
+.proyectos .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #153B50;
+  border-radius: 2%;
+  background-color: #8BE8CB;
+  width: 30%;
+  margin: 1%;
+  display: inline-flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.proyectos .tarjeta p {
+  font-size: 1.2rem;
+  color: #153B50;
+  padding: 1%;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.proyectos .tarjeta button {
+  height: 2rem;
+  width: 4rem;
+  border: #824670 1px solid;
+  border-radius: 50%;
+  background-color: #E4D1EF;
+  margin-bottom: 1%;
+  margin-top: 0;
+  padding-top: 0;
+}
+.proyectos .tarjeta button:hover {
+  background-color: #824670;
+  transition: 1s;
+}
+.proyectos .tarjeta button a {
+  text-decoration: none;
+  color: #824670;
+  font-size: 1rem;
+}
+.proyectos .tarjeta button a:hover {
+  color: white;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=estilo.css.map */

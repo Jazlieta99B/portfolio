@@ -1,0 +1,19 @@
+main {
+    align-items: center;
+
+    h1 {
+        color: $violeta;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2%;
+    }
+
+    .info {
+        color: $azul;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        width: 40%;
+        margin: 10% 30%;
+        text-align: center;
+    }
+}

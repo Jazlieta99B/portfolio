@@ -1,13 +1,21 @@
 footer {
 	margin: 0.1rem 0.1rem;
 	padding: 0;
-	border-top: solid 1px $violeta;
+	border-top: solid 1px $azul;
 	height: auto;
 
 	.pie {
 		font-size: 1.1rem;
-		color: $violeta;
+		color: $azul;
 		text-align: center;
 		margin: 0.1rem 0.1rem;
+	}
+
+	.iconosPie {
+		text-align: center;
+
+		.bi {
+			height: 3rem;
+		}
 	}
 }
