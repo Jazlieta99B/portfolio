@@ -1,6 +1,7 @@
 .navbar {
     justify-content: center;
     font-size: 1.2rem;
+    font-weight: bold;
     border-bottom: solid 2px $violeta;
     border-left: solid 2px $violeta;
     border-right: solid 2px $violeta;
@@ -20,7 +21,7 @@
             .nav-link {
                 color: $violeta;
                 text-decoration: none;
-                border: $violeta solid 0.1rem;
+                border: $violeta solid 0.2rem;
                 background-color: transparent;
                 cursor: pointer;
 

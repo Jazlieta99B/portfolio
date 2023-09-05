@@ -12,15 +12,17 @@ footer .pie {
   margin: 0.1rem 0.1rem;
 }
 footer .iconosPie {
+  font-size: 1.5rem;
   text-align: center;
 }
-footer .iconosPie .bi {
-  height: 3rem;
+footer .iconosPie .itemB {
+  padding: 2%;
 }
 
 .navbar {
   justify-content: center;
   font-size: 1.2rem;
+  font-weight: bold;
   border-bottom: solid 2px #824670;
   border-left: solid 2px #824670;
   border-right: solid 2px #824670;
@@ -39,7 +41,7 @@ footer .iconosPie .bi {
 .navbar .derecha .nav-item .nav-link {
   color: #824670;
   text-decoration: none;
-  border: #824670 solid 0.1rem;
+  border: #824670 solid 0.2rem;
   background-color: transparent;
   cursor: pointer;
 }
@@ -65,14 +67,14 @@ main h1 {
   color: #824670;
   text-align: center;
   font-size: 3rem;
-  margin: 2%;
+  margin: 3%;
 }
 main .info {
   color: #153B50;
   bottom: 0.5rem;
   font-size: 1.5rem;
   width: 40%;
-  margin: 10% 30%;
+  margin: 5% 30%;
   text-align: center;
 }
 
@@ -82,7 +84,7 @@ main .info {
 }
 .contacto h2 {
   text-align: center;
-  margin: 1%;
+  margin: 3%;
   color: #824670;
 }
 .contacto form {
@@ -141,7 +143,7 @@ main .info {
 }
 .proyectos h2 {
   text-align: center;
-  margin: 1%;
+  margin: 3%;
   color: #824670;
 }
 .proyectos .tarjeta {
@@ -189,6 +191,26 @@ main .info {
 .proyectos .tarjeta button a:hover {
   color: white;
   transition: 1s;
+}
+
+.info h2 {
+  text-align: center;
+  margin: 3%;
+  color: #824670;
+}
+.info p {
+  color: #153B50;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 1% 5%;
+  text-align: center;
+}
+.info p a {
+  color: #153B50;
+}
+.info p a:hover {
+  color: #824670;
 }
 
 /*# sourceMappingURL=estilo.css.map */
