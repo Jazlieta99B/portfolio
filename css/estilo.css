@@ -79,63 +79,46 @@ main .info {
 }
 
 .contacto {
-  /*Versión tablet*/
-  /*Versión celu*/
+  color: #153B50;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  width: 40%;
+  margin: 5% 30%;
+  text-align: center;
 }
 .contacto h2 {
   text-align: center;
-  margin: 3%;
+  margin: 5%;
   color: #824670;
 }
-.contacto form {
-  border: 3px solid #153B50;
-  border-radius: 5%;
-  background-color: #d8b3ee;
+.contacto a {
+  text-decoration: none;
   color: #153B50;
-  height: 70%;
-  width: 35%;
-  margin: 3% 30%;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  width: 40%;
+  margin: 5% 30%;
   text-align: center;
-  font-size: 1.3rem;
-  padding: 1%;
 }
-.contacto form label,
-.contacto form input,
-.contacto form textarea {
-  margin: 1%;
-  overflow: hidden;
-}
-.contacto form button {
-  font-size: 1.3rem;
-  height: 2.1rem;
-  width: 5.7rem;
-  border: #153B50 1px solid;
-  border-radius: 50%;
-  background-color: #E4D1EF;
-  margin-bottom: 1%;
-}
-.contacto form button:hover {
-  background-color: #153B50;
-  color: white;
-  transition: 1s;
-}
+
+/*Versión tablet*/
 @media (min-width: 500px) and (max-width: 900px) {
-  .contacto .caja {
+  .caja {
     width: 60%;
     height: 50%;
     margin: 1% 20%;
     overflow: scroll;
   }
 }
+/*Versión celu*/
 @media (max-width: 500px) {
-  .contacto .caja {
+  .caja {
     width: 80%;
     height: 60%;
     margin: 1% 10%;
     overflow: scroll;
   }
 }
-
 .proyectos {
   width: 95%;
   text-align: center;

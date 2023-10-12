@@ -1,67 +1,84 @@
 .contacto {
+    color: $azul;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    width: 40%;
+    margin: 5% 30%;
+    text-align: center;
+
     h2 {
         text-align: center;
-        margin: 3%;
+        margin: 5%;
         color: $violeta;
     }
 
-    form {
-        border: 3px solid $azul;
-        border-radius: 5%;
-        background-color: #d8b3ee;
+    // form {
+    //     border: 3px solid $azul;
+    //     border-radius: 5%;
+    //     background-color: #d8b3ee;
+    //     color: $azul;
+    //     height: 70%;
+    //     width: 35%;
+    //     margin: 3% 30%;
+    //     text-align: center;
+    //     font-size: 1.3rem;
+    //     padding: 1%;
+
+    //     label,
+    //     input,
+    //     textarea {
+    //         margin: 1%;
+    //         overflow: hidden;
+    //     }
+
+    //     button {
+    //         font-size: 1.3rem;
+    //         height: 2.1rem;
+    //         width: 5.7rem;
+    //         border: $azul 1px solid;
+    //         border-radius: 50%;
+    //         background-color: $lila;
+    //         margin-bottom: 1%;
+
+    //         &:hover {
+    //             background-color: $azul;
+    //             color: white;
+    //             transition: 1s;
+    //         }
+    //     }
+
+    a {
+        text-decoration: none;
         color: $azul;
-        height: 70%;
-        width: 35%;
-        margin: 3% 30%;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        width: 40%;
+        margin: 5% 30%;
         text-align: center;
-        font-size: 1.3rem;
-        padding: 1%;
-
-        label,
-        input,
-        textarea {
-            margin: 1%;
-            overflow: hidden;
-        }
-
-        button {
-            font-size: 1.3rem;
-            height: 2.1rem;
-            width: 5.7rem;
-            border: $azul 1px solid;
-            border-radius: 50%;
-            background-color: $lila;
-            margin-bottom: 1%;
-
-            &:hover {
-                background-color: $azul;
-                color: white;
-                transition: 1s;
-            }
-        }
-    }
-
-
-    /*Versión tablet*/
-    @media (min-width:500px) and (max-width: 900px) {
-
-        .caja {
-            width: 60%;
-            height: 50%;
-            margin: 1% 20%;
-            overflow: scroll;
-        }
-    }
-
-
-    /*Versión celu*/
-    @media (max-width: 500px) {
-
-        .caja {
-            width: 80%;
-            height: 60%;
-            margin: 1% 10%;
-            overflow: scroll;
-        }
     }
 }
+
+
+/*Versión tablet*/
+@media (min-width:500px) and (max-width: 900px) {
+
+    .caja {
+        width: 60%;
+        height: 50%;
+        margin: 1% 20%;
+        overflow: scroll;
+    }
+}
+
+
+/*Versión celu*/
+@media (max-width: 500px) {
+
+    .caja {
+        width: 80%;
+        height: 60%;
+        margin: 1% 10%;
+        overflow: scroll;
+    }
+}
+// }
