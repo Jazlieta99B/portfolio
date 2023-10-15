@@ -22,6 +22,7 @@
         display: inline-flex;
         gap: 2rem;
         flex-wrap: wrap;
+        overflow: auto;
 
         p {
             font-size: 1.2rem;

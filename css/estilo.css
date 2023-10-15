@@ -49,6 +49,15 @@ footer .iconosPie .itemB {
   background-color: #824670;
   transition: 1s;
 }
+.navbar h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  margin: 0 2%;
+  font-size: 3rem;
+}
+.navbar .navbar-toggler {
+  background-color: #824670;
+}
 
 * {
   margin: 0;
@@ -121,6 +130,7 @@ main .info {
   display: inline-flex;
   gap: 2rem;
   flex-wrap: wrap;
+  overflow: auto;
 }
 .proyectos .tarjeta p {
   font-size: 1.2rem;
