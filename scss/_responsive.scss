@@ -1,0 +1,191 @@
+/* Pantalla grande */
+@media (min-width: 900) {
+    .padre {
+        display: grid;
+        grid-template-areas: "main info";
+
+        .main {
+            grid-area: main;
+        }
+
+        .info {
+            grid-area: info;
+        }
+    }
+
+    .proyectos {
+        display: grid;
+        grid-template-areas: "tarjetaVM tarjetaE tarjetaNH tarjetaM"
+            "botonVM botonE botonNH botonM";
+
+        .VM {
+            grid-area: tarjetaVM;
+        }
+
+        .E {
+            grid-area: tarjetaE;
+        }
+
+        .NH {
+            grid-area: tarjetaNH;
+        }
+
+        .M {
+            grid-area: tarjetaM;
+        }
+
+        .btVM {
+            grid-area: botonVM;
+        }
+
+        .btE {
+            grid-area: botonE;
+        }
+
+        .btNH {
+            grid-area: botonNH;
+        }
+
+        .btM {
+            grid-area: botonM;
+        }
+    }
+}
+
+/*Versión tablet*/
+@media (min-width: 500px) and (max-width: 900px) {
+    .padre {
+        flex-flow: row;
+        width: 100%;
+        margin: 1%;
+        align-items: center;
+        justify-content: center;
+
+        .main {
+            width: 100%;
+            margin: 1%;
+        }
+
+        .info {
+            width: 100%;
+            margin: 1%;
+        }
+    }
+    .proyectos {
+        display: grid;
+        grid-template-areas: "tarjetaVM botonVM"
+            "tarjetaE botonE"
+            "tarjetaNH botonNH"
+            "tarjetaM botonM";
+
+        .VM {
+            grid-area: tarjetaVM;
+        }
+
+        .E {
+            grid-area: tarjetaE;
+        }
+
+        .NH {
+            grid-area: tarjetaNH;
+        }
+
+        .M {
+            grid-area: tarjetaM;
+        }
+
+        .btVM {
+            grid-area: botonVM;
+            display: flex;
+            margin: 20%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btE {
+            grid-area: botonE;
+            display: flex;
+            margin: 10%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btNH {
+            grid-area: botonNH;
+            display: flex;
+            margin: 10%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btM {
+            grid-area: botonM;
+            display: flex;
+            margin: 10%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/*Versión celu*/
+@media (max-width: 500px) {
+    .padre {
+        display: grid;
+        grid-template-areas: "main" "info";
+        width: 100%;
+        margin: 1%;
+
+        .main {
+            grid-area: main;
+            width: 98%;
+            margin: 1%;
+        }
+
+        .info {
+            grid-area: info;
+            width: 98%;
+            margin: 1%;
+        }
+    }
+
+    .proyectos {
+        display: grid;
+        grid-template-areas: "tarjetaVM botonVM"
+            "tarjetaE botonE"
+            "tarjetaNH botonNH"
+            "tarjetaM botonM";
+
+        .VM {
+            grid-area: tarjetaVM;
+        }
+
+        .E {
+            grid-area: tarjetaE;
+        }
+
+        .NH {
+            grid-area: tarjetaNH;
+        }
+
+        .M {
+            grid-area: tarjetaM;
+        }
+
+        .btVM {
+            grid-area: botonVM;
+        }
+
+        .btE {
+            grid-area: botonE;
+        }
+
+        .btNH {
+            grid-area: botonNH;
+        }
+
+        .btM {
+            grid-area: botonM;
+        }
+    }
+}

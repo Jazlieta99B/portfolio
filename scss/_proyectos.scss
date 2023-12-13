@@ -185,11 +185,6 @@
 }
 
 .btPag {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-between;
-	margin-right: 3%;
-	margin-left: 2%;
 
 	button {
 		padding-right: 1%;
@@ -197,7 +192,8 @@
 		border: 2px solid $turquesaFuerte;
 		background-color: rgba(54, 101, 106, 0.4);
 		cursor: pointer;
-		padding: 1%;
+		width: 190px;
+		height: 50px;
 
 		a {
 			color: $lila;
@@ -207,11 +203,13 @@
 		:hover {
 			color: $turquesaFuerte;
 			background-color: transparent;
+			font-size: 1.1rem;
 		}
 	}
 
 	:hover {
 		background-color: rgba(255, 255, 255, 0.5);
 		color: $turquesaFuerte;
+		font-size: 1.1rem;
 	}
 }
