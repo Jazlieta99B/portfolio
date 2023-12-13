@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+header {
+  width: 100%;
+  text-align: center;
+  margin-top: 0%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 192, 102, 0.5803921569);
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul li :hover {
+  text-decoration: underline;
+}
+header ul li a {
+  text-decoration: none;
+  color: #c69adf;
+  font-size: 2rem;
+  font-family: "Glass Antiqua", cursive;
+  color: #ad6597;
+}
+header ul li a h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.proyectos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.proyectos .card {
+  position: relative;
+  width: 190px;
+  height: 200px;
+  border-radius: 14px;
+  z-index: 3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
+}
+.proyectos .bgT {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background: #36656a;
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.proyectos .blobT {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-color: #935c85;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+.proyectos .bgV {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 240px;
+  z-index: 2;
+  background: #935c85;
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.proyectos .blobV {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background-color: #36656a;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+.proyectos .book {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  background-color: rgb(218, 200, 200);
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  margin: 1%;
+}
+.proyectos .book p {
+  padding: 3%;
+  justify-content: center;
+  margin: 15%;
+}
+.proyectos .cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.proyectos .cover p {
+  z-index: 3;
+}
+.proyectos .cover .tituloProyecto {
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
+  font-family: "Playpen Sans", cursive;
+}
+.proyectos .book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+.proyectos p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: Agbalumo;
+  font-size: 2rem;
+  color: #104F55;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  --s: 140px;
+  --_g: #0000 52%, #ffb5b58a
+      /* first color */
+      54% 57%, #0000 59%;
+  background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s) / 2), radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s) / 2) 0, radial-gradient(farthest-side at 133.33% 50%, var(--_g)), radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #e5e5f7;
+  /* second color */
+  background-size: calc(var(--s) / 4.667) var(--s), var(--s) calc(var(--s) / 4.667);
+}
+
+.main {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 5%;
+  background: radial-gradient(#8BE8CB, #54c6a2);
+  border: 3px solid #104F55;
+  text-align: center;
+}
+
+.info {
+  background-color: #ad6597;
+  font-size: 1.2rem;
+}
+.info h3 {
+  width: 80%;
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.misDatos h1 {
+  color: pink;
+}
+
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+  fill: #03A9F4;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.gmail {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #f14336;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+
+/*# sourceMappingURL=estio.css.map */

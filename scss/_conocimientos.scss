@@ -1,0 +1,71 @@
+.contenedorKnow {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  .conocimientos {
+    display: inline-flex;
+    justify-content: center;
+
+    .BTKnow {
+      border: solid palevioletred 2px;
+      color: palevioletred;
+      background-color: rgba(216, 111, 146, 0.3);
+      width: 10rem;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 5%;
+      margin: 2%;
+      padding: 1%;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $violeta;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.modal img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.btn-show-modal {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cerrarModal {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+}

@@ -1,22 +1,11 @@
 footer {
-	margin: 0.1rem 0.1rem;
-	padding: 0;
-	border-top: solid 1px $azul;
-	height: auto;
-
-	.pie {
-		font-size: 1.1rem;
-		color: $azul;
-		text-align: center;
-		margin: 0.1rem 0.1rem;
-	}
-
-	.iconosPie {
-		font-size: 1.5rem;
-		text-align: center;
-
-		.itemB {
-			padding: 2%;
-		}
-	}
+    color: $violeta;
+    font-size: 1.3rem;
+    font-family: 'Glass Antiqua', cursive;
+    box-shadow: 0 0 5px $violeta;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
 }

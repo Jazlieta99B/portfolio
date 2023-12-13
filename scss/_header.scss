@@ -1,45 +1,13 @@
-.navbar {
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-bottom: solid 2px $violeta;
-    border-left: solid 2px $violeta;
-    border-right: solid 2px $violeta;
-    background-color: $azul;
-    
+header {
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  color: $violeta;
+  margin: 1%;
 
-    .derecha {
-        list-style: none;
-        text-align: end;
-        margin-left: 0;
-
-        .nav-item {
-            display: inline-block;
-            margin: 0.2rem 0.2rem;
-            padding: 0.2rem;
-
-            .nav-link {
-                color: $violeta;
-                text-decoration: none;
-                border: $violeta solid 0.2rem;
-                background-color: transparent;
-                cursor: pointer;
-
-                &:hover {
-                    color: white;
-                    background-color: $violeta;
-                    transition: 1s;
-                }
-            }
-        }
-    }
-    h1 {
-        font-family: 'Dancing Script', cursive;
-        color: white;
-        margin: 0 2%;
-        font-size: 3rem;
-    }
-.navbar-toggler {
- background-color: $violeta;   
-}
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Kalnia', serif;
+    font-weight: 600;
+  }
 }

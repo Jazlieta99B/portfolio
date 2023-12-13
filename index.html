@@ -2,81 +2,175 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Etiquetas SEO -->
-    <meta name="description"
-        content="Bienvenides a mi portfolio, aca podrás ver mis trabajos y ponerte en contacto conmigo para consultas o cotizaciones.">
-    <meta name="keywords"
-        content="programación, desarrollo web, portfolio, páginas web, html, css, scss, javascript, programador">
-    <title>Jazlieta´s portfolio</title>
-    <!-- Estilos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <!-- font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-    </style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Etiquetas SEO -->
+  <meta name="description"
+    content="Bienvenides a mi portfolio, aca podrás ver mis trabajos y ponerte en contacto conmigo para consultas o cotizaciones.">
+  <meta name="keywords"
+    content="programación, desarrollo web, portfolio, páginas web, html, css, scss, javascript, programador">
+  <title>Jazmín Isabel Castelo</title>
+  <!-- Icono de la página -->
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse derecha" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/info.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h1>Jazlieta</h1>
-        </nav>
-    </header>
-    <!-- Main -->
-    <main>
-        <h1>Bienvenides a mi portfolio</h1>
-        <section class="info">
-            <p>¡Hola! Mi nombre es Jazmín, soy de Pico Truncado y tengo 24 años. Estoy dando mis primeros pasos en el
-                mundo de la programación y en este es mi portfolio, te invito a que conozcas mis trabajos.</p>
-        </section>
+<body id="body">
+  <header></header>
+
+  <div class="padre">
+    <!-- MAIN -->
+    <main class="main">
+      <div class="cardP">
+        <p class="heading">
+        <h2 class="presentacion">¡Hola! Mi nombre es Jazmín, soy de Pico Truncado y tengo 24 años. Estoy iniciándome en
+          el
+          mundo de
+          la programación y este es mí portfolio, te invito a que me conozcas y veas mis trabajos.</h2>
+        </p>
+      </div>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p class="pie">Página creada por Jazlieta, todos los derechos reservados.</p>
-        <div class="iconosPie">
-            <span class="itemA">
-                <a href="https://www.linkedin.com/in/jazm%C3%ADn-castelo/" target="_blank"> <i class="bi bi-linkedin">
-                    </i>
-                </a>
-            </span>
-            <span class="itemB"> <a href="https://github.com/Jazlieta99B" target="_blank"> <i class="bi bi-github"> </i>
-                </a></span>
-        </div>
-    </footer>
+    <!-- INFO -->
+    <aside class="info">
+      <p>Soy Agente de Viajes y Turismo, y Licenciada en Hotelería y Turismo; en mis carreras aprendí Amadeus y
+        Sabre. También estudié Inglés muchos años y se un poco de Portugués.</p>
+      <p>Estoy estudiando programación, por ahora mis conocimientos son en: HTML, CSS, GIT, GitHub, SCSS y JavaScript.
+        Y
+        estoy aprendiendo React Js.</p>
+      <p>Si alguna de mis habilidades te interesa, podes comunicarte conmigo a través de <a href="#redes">mis redes</a>.
+      </p>
+    </aside>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+  <!-- Proyectos -->
+  <h2> Mis proyectos </h2>
+  <div class="proyectos">
+    <div class="book">
+      <p class="infoPag">Esta página es sobre un sitio turístico en Perito Moreno, Santa Cruz.</p>
+      <div class="cover card">
+        <p class="tituloProyecto">Volcán Molina</p>
+        <div class="bgV"></div>
+        <div class="blobV"></div>
+      </div>
+    </div>
+
+    <div class="book">
+      <p class="infoPag">Esta es una página de una empresa de transportes de Tornquist, provincia de Buenos
+        Aires.</p>
+      <div class="cover card">
+        <p class="tituloProyecto">E&E Transportes</p>
+        <div class="bgT"></div>
+        <div class="blobT"></div>
+      </div>
+    </div>
+
+    <div class="book">
+      <p class="infoPag">Esta es una página ficticia sobre una organización de adopción de gatos y perros.</p>
+      <div class="cover card">
+        <p class="tituloProyecto">Nuevos Hogares</p>
+        <div class="bgV"></div>
+        <div class="blobV"></div>
+      </div>
+    </div>
+
+    <div class="book">
+      <p class="infoPag">Esta es una empresa ficticia de venta de juegos de mesa, realizada para el curso de JavaScript.
+      </p>
+      <div class="cover card">
+        <p class="tituloProyecto">Mesaza</p>
+        <div class="bgT"></div>
+        <div class="blobT"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="btPag">
+    <button><a href="https://jazlieta99b.github.io/VolcanMolina/" target="_blank" rel="noopener noreferrer">Visitar
+        Volcán
+        Molina</a></button>
+    <button><a href="https://jazlieta99b.github.io/EyE/" target="_blank" rel="noopener noreferrer">Visitar
+        E&E</a></button>
+    <button><a href="https://jazlieta99b.github.io/NuevosHogares/" target="_blank" rel="noopener noreferrer">Visitar
+        Nuevos Hogares</a></button>
+    <button><a href="https://jazlieta99b.github.io/proyectofinalCastelo/" target="_blank"
+        rel="noopener noreferrer">Visitar Mesaza</a></button>
+  </div>
+
+  <!-- Mis conocimientos -->
+  <h2> Mis conocimientos </h2>
+  <section class="contenedorKnow">
+    <div class="conocimientos">
+      <!-- INGLÉS -->
+      <button class="BTKnow btn-show-modal" onclick="openModalI()">Inglés</button>
+      <div id="myModalI" class="modal">
+        <span onclick="closeModalI()" class="cerrarModal">Cerrar</span>
+        <img src="./img/ingles.jpg"
+          alt="Imagen del ceretificado otorgado por Pearson de Inglés nivel B2" class="ingles">
+      </div>
+      <div id="overlayI" class="overlay" onclick="closeModalI()"></div>
+
+      <!-- Portugués -->
+      <button class="BTKnow btn-show-modal" onclick="openModalP()">Portugués</button>
+      <div id="myModalP" class="modal">
+        <span onclick="closeModalP()" class="cerrarModal">Cerrar</span>
+        <img src="./img/portugues.jpg"
+          alt="Imagen del ceretificado otorgado por Filo:UBA del curso de Portugués Nivel 2">
+      </div>
+      <div id="overlayP" class="overlay" onclick="closeModalP()"></div>
+
+      <!-- DESARROLLO WEB -->
+      <button class="BTKnow btn-show-modal" onclick="openModalDesarrollo()">Desarrollo Web</button>
+      <div id="myModalDesarrollo" class="modal">
+        <span onclick="closeModalDesarrollo()" class="cerrarModal">Cerrar</span>
+        <img src="./img/desarrollowebCoder.png"
+          alt="Imagen del ceretificado otorgado por CoderHouse del curso de Desarrollo Web">
+      </div>
+      <div id="overlayDesarrollo" class="overlay" onclick="closeModalDesarrollo()"></div>
+
+      <!-- JAVASCRIPT -->
+      <button class="BTKnow btn-show-modal" onclick="openModal()">JavaScript</button>
+      <div id="myModal" class="modal">
+        <span onclick="closeModal()" class="cerrarModal">Cerrar</span>
+        <img src="./img/javascriptCoder.png"
+          alt="Imagen del ceretificado otorgado por CoderHouse del curso de JavaScript">
+      </div>
+      <div id="overlay" class="overlay" onclick="closeModal()"></div>
+
+      <!-- REACT -->
+      <button class="BTKnow btn-show-modal" onclick="openModalR()">React Js</button>
+      <div id="myModalR" class="modal" style="width: 40%; height: 40%;">
+        <span onclick="closeModalR()" class="cerrarModal">Cerrar</span>
+        <h4 style="font-size: 1.5rem; text-align: center; margin-top: 20%;">En proceso...</h4>
+      </div>
+      <div idR="overlay" class="overlay" onclickR="closeModal()"></div>
+
+
+      <!-- COMMUNITY MANAGER -->
+      <button class="BTKnow btn-show-modal" onclick="openModalCM()">Community Manager</button>
+      <div id="myModalCM" class="modal">
+        <span onclick="closeModalCM()" class="cerrarModal">Cerrar</span>
+        <img src="./img/community-manager.jpg"
+          alt="Imagen del ceretificado otorgado por Capacitas del curso de Community Manager">
+      </div>
+      <div id="overlayCM" class="overlay" onclick="closeModalCM()"></div>
+    </div>
+  </section>
+
+  <!-- Redes -->
+  <div class="redes">
+    <h2 id="redes">Mis redes</h2>
+    <div class="botonesRedes">
+      <button> <a href="https://www.linkedin.com/in/jazm%C3%ADn-castelo/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a></button>
+      <button><a href="https://github.com/Jazlieta99B" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+    </div>
+  </div>
+
+  <footer></footer>
+  <script src="./app.js"></script>
 </body>
 
 </html>

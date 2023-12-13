@@ -1,64 +1,217 @@
 .proyectos {
-    width: 95%;
-    text-align: center;
-    margin: 1% 2.5%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
 
-    h2 {
-        text-align: center;
-        margin: 3%;
-        color: $violeta;
-    }
+	.card {
+		position: relative;
+		width: 190px;
+		height: 200px;
+		border-radius: 14px;
+		z-index: 3;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
+	}
 
-    .tarjeta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: solid 2px $azul;
-        border-radius: 2%;
-        background-color: $turquesa;
-        width: 30%;
-        margin: 1%;
-        display: inline-flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-        overflow: auto;
+	// Color turquesa
+	.bgT {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 190px;
+		height: 240px;
+		z-index: 2;
+		background: $fondoTurquesa;
+		backdrop-filter: blur(24px);
+		border-radius: 10px;
+		overflow: hidden;
+		outline: 2px solid white;
+	}
 
-        p {
-            font-size: 1.2rem;
-            color: $azul;
-            padding: 1%;
-            text-align: center;
-            margin: 1%;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
+	.blobT {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		width: 155px;
+		height: 155px;
+		border-radius: 50%;
+		background-color: $fondoVioleta;
+		opacity: 1;
+		filter: blur(12px);
+		animation: blob-bounce 5s infinite ease;
+	}
 
-        button {
-            height: 2rem;
-            width: 4rem;
-            border: $violeta 1px solid;
-            border-radius: 50%;
-            background-color: $lila;
-            margin-bottom: 1%;
-            margin-top: 0;
-            padding-top: 0;
+	// Color violeta
+	.bgV {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 190px;
+		height: 240px;
+		z-index: 2;
+		background: $fondoVioleta ;
+		backdrop-filter: blur(24px);
+		border-radius: 10px;
+		overflow: hidden;
+		outline: 2px solid white;
+	}
 
-            &:hover {
-                background-color: $violeta;
-                transition: 1s;
-            }
+	.blobV {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		width: 155px;
+		height: 155px;
+		border-radius: 50%;
+		background-color: $fondoTurquesa;
+		opacity: 1;
+		filter: blur(12px);
+		animation: blob-bounce 5s infinite ease;
+	}
 
-            a {
-                text-decoration: none;
-                color: $violeta;
-                font-size: 1rem;
+	@keyframes blob-bounce {
+		0% {
+			transform: translate(-100%, -100%) translate3d(0, 0, 0);
+		}
 
-                &:hover {
-                    color: white;
-                    transition: 1s;
-                }
-            }
-        }
-    }
+		25% {
+			transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+		}
+
+		50% {
+			transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+		}
+
+		75% {
+			transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+		}
+
+		100% {
+			transform: translate(-100%, -100%) translate3d(0, 0, 0);
+		}
+	}
+
+	.book {
+		position: relative;
+		width: 200px;
+		height: 250px;
+		border-radius: 14px;
+		background-color: rgb(218, 200, 200);
+		-webkit-box-shadow: 1px 1px 12px #000;
+		box-shadow: 1px 1px 12px #000;
+		-webkit-transform: preserve-3d;
+		-ms-transform: preserve-3d;
+		transform: preserve-3d;
+		-webkit-perspective: 2000px;
+		perspective: 2000px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		color: white;
+		margin: 1%;
+
+		p {
+			padding: 3%;
+			justify-content: center;
+			margin: 15%;
+		}
+	}
+
+	.cover {
+		top: 0;
+		position: absolute;
+		background-color: lightgray;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		cursor: pointer;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+		-webkit-transform-origin: 0;
+		-ms-transform-origin: 0;
+		transform-origin: 0;
+		-webkit-box-shadow: 1px 1px 12px #000;
+		box-shadow: 1px 1px 12px #000;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+
+		p {
+			z-index: 3;
+		}
+
+		.tituloProyecto {
+			justify-content: center;
+			margin: 1%;
+			padding: 1%;
+			font-family: 'Playpen Sans', cursive;
+		}
+	}
+
+	.book:hover .cover {
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+		-webkit-transform: rotatey(-80deg);
+		-ms-transform: rotatey(-80deg);
+		transform: rotatey(-80deg);
+	}
+
+	p {
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+	.infoPag {
+		color: $azul;
+	}
+}
+
+.btPag {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin-right: 3%;
+	margin-left: 2%;
+
+	button {
+		padding-right: 1%;
+		padding-left: 1%;
+		border: 2px solid $turquesaFuerte;
+		background-color: rgba(54, 101, 106, 0.4);
+		cursor: pointer;
+		padding: 1%;
+
+		a {
+			color: $lila;
+			text-decoration: none;
+			font-size: 1rem;
+		}
+		:hover {
+			color: $turquesaFuerte;
+			background-color: transparent;
+		}
+	}
+
+	:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		color: $turquesaFuerte;
+	}
 }
